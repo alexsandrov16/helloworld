@@ -32,21 +32,6 @@ COPY . .
 # Enable Apache modules
 RUN a2enmod rewrite headers
 
-# Configure Apache virtual host (replace 'your_domain' with your actual domain)
-RUN echo "
-<VirtualHost *:80>
-    ServerAdmin webmaster@your_domain
-    DocumentRoot /var/www/html
-    <Directory /var/www/html>
-        Options Indexes FollowSymLinks
-        AllowOverride All
-        Require all granted
-    </Directory>
-    ErrorLog /var/log/apache2/error.log
-    CustomLog /var/log/apache2/access.log combined
-</VirtualHost>
-" > /etc/apache2/sites-available/000-default.conf
-
 # Restart Apache
 RUN service apache2 restart
 
