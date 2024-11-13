@@ -11,8 +11,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     libzip-dev \
     && docker-php-ext-install zip \
-    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-    && composer install
+#    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
+#    && composer install
 
 # Comando para ejecutar tu bot
 CMD ["php", "-S", "0.0.0.0:8080", "xbot.php"]
