@@ -1,0 +1,10 @@
+{
+    "require": {
+        "al3x5/xbot": "^0.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

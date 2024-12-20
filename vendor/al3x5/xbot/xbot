@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+
+require_once 'vendor/autoload.php';
+
+$cli = new \Al3x5\xBot\Cli\App($argc, $argv);
+$cli->run();

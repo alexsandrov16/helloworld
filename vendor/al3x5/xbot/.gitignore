@@ -1,0 +1,9 @@
+cache/
+logs/
+storage/
+vendor/
+composer.lock
+xbot.php
+config.php
+cli.php
+index.php

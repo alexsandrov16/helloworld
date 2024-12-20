@@ -1,5 +1,5 @@
 # Usa una imagen base de PHP
-FROM php:8.0-cli
+FROM php:8.3-cli
 
 
 # Establece el directorio de trabajo

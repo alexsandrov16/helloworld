@@ -1,2 +1,0 @@
-# helloworld
-tester 1
